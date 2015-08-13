@@ -1,0 +1,8 @@
+public class CharReplacingInString{
+	   public static void main(String args[]){
+	      String Str = new String("Replace char in string ");
+
+	      System.out.print("Return Value :" );
+	      System.out.println(Str.replace('c', 'S'));
+	   }
+}
