@@ -1,0 +1,21 @@
+public class CharRemover{
+    public static void main(String args[]){
+    String sampleString = "This is some text";
+    char sampleChar = 's';
+    System.out.println(char_remove(sampleString, sampleChar));
+}
+
+public static String char_remove(String a, char b){
+    String newString = " ";
+    int len = a.length();
+    for(int i =0; i<len ;i++)
+     {
+       char c = a.charAt(i);
+       if(c == b)
+          newString = newString + " ";
+       else
+          newString = newString + c ;  
+     }
+    return newString;
+  }
+}
